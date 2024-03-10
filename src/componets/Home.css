@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 21rem;
+}
+
+.card_body {
+  display: flex;
+  gap: 2rem;
+  margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 20rem; /* Adjust card width to fit smaller screens */
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+    margin-left: 15px;
+  }
+
+  .card_body {
+    flex-direction: column; /* Stack card elements vertically on smaller screens */
+    gap: 1rem; /* Reduce gap between elements for better spacing */
+    margin: 10px; /* Adjust margin for better spacing */
+  }
+}
